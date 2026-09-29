@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de imágenes</title>
+</head>
+<body>
+    <p id="parrafito"></p>
+    <script>
+        document.getElementById("parrafito").innerHTML = 5+6;
+    </script>
+    <script>
+        document.write("<h2>Buenos días </h2>");
+    </script>
+
+    <p id="prueba">Modificando el contenido.</p>
+    <button type="button" onclick="document.getElementById('prueba').innerHTML = 'CAMBIANDO el contenido!'">
+    ¡Dale!
+    </button>
+
+    <h1>Cambio de imágenes con JavaScript</h1>
+    <img id="myFPImage"
+        onclick="cambiaPic()"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCQSPYriIfPRfUEQtGS2mSAHQXKM9XZGt0Gy5-rzyfFkuzRMi2NlRXJBk&s=10"
+        width="100"
+        height="180">
+    <p>Haz click sobre la cabra para cambiarla.</p>
+
+    <script>
+    function cambiaPic() {
+        var image = document.getElementById("myFPImage");
+
+        if (image.src.match("ANd9GcRCQSPYriIfPRfUEQtGS2mSAHQXKM9XZGt0Gy5-rzyfFkuzRMi2NlRXJBk&s=10")) {
+            image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9A2jZapEmunQN-qLGJ378VrT0_ARzM2rS6KiYiqX8OA&s=10";
+        } else {
+            image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCQSPYriIfPRfUEQtGS2mSAHQXKM9XZGt0Gy5-rzyfFkuzRMi2NlRXJBk&s=10";
+        }
+    }
+</script>
+
+    <p id="mytxt">Aprende JavaScript con MyFPSchool!</p>
+    <button type="button" onclick="myFunction()">Dale!</button>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mytxt");
+
+            x.style.fontSize = "25px";
+            x.style.color = "red";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo1</title>
+</head>
+<body>
+    <h1>Prueba de Métodos de Salida en JavaScript</h1>
+    <p id="texto"></p>
+    <script>
+        document.getElementById("texto").innerHTML="Contenido previo...";
+    </script>
+    
+<button onclick="alert('Hola Yil')">1.Ventana de alerta</button>
+<button onclick="console.log('Hola Yil')">2.Mensaje en consola</button>
+<button type="button" onclick="document.getElementById('texto').innerHTML= 'Cambiar contenido previo'">3.Modificar DOM</button>
+<button onclick="document.write('<h2>Hola Yil</h2>')">4.Document Write</button>
+</body>
+</html>
