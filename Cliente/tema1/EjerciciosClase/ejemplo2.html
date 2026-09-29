@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo2</title>
+</head>
+<body>
+    <h1 id="titulo"> Título Original</h1>
+    <p id="parrafo">Este es el texto inicial del párrafo</p>
+
+
+    <button onclick="cambiarTexto()">Cambiar texto</button>
+    <button onclick="cambiarEstilo()">Cambiar Estilo CSS </button>
+    
+    <script>
+
+        function cambiarTexto(){
+
+            document.getElementById("titulo").innerHTML ="¡Título Modificado!";
+            document.getElementById("parrafo").innerHTML="El contenido del párrafo se ha actualizado";
+        }
+
+        function cambiarEstilo(){
+
+            document.getElementById("parrafo").style.color="purple"
+            document.getElementById("parrafo").style.fontWeight="bold";
+
+        }
+    </script>
+
+</body>
+</html>
