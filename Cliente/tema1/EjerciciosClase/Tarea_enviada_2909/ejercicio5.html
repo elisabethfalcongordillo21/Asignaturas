@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Mensajes de buenos días</h1>
+
+    <button onclick="saludar('Добро пожаловать', 'red')">Ruso</button>
+    <button onclick="saludar('Bienvenido', 'green')">Español</button>
+    <button onclick="saludar('Welcome', 'blue')">Inglés</button>
+
+    <p id="mensaje"></p>
+
+    <script>
+        function saludar(texto, color) {
+            var parrafo = document.getElementById("mensaje");
+            parrafo.innerHTML = texto;
+            parrafo.style.color = color;
+        }
+    </script>
+</body>
+</html>

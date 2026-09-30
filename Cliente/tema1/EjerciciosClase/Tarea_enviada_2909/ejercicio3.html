@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Test del FC Barcelona: Verdadero o Falso</h1>
+
+    <p id="p1">1. El FC Barcelona fue fundado en 1899.</p>
+    <button onclick="comprobar('p1', true, true)">Verdadero</button>
+    <button onclick="comprobar('p1', false, true)">Falso</button>
+
+    <p id="p2">2. Raphinha es un jugador brasileño.</p>
+    <button onclick="comprobar('p2', true, true)">Verdadero</button>
+    <button onclick="comprobar('p2', false, true)">Falso</button>
+
+    <p id="p3">3. Robert Lewandowski es portugués.</p>
+    <button onclick="comprobar('p3', true, false)">Verdadero</button>
+    <button onclick="comprobar('p3', false, false)">Falso</button>
+
+    <p id="p4">4. El Barça juega sus partidos de local en el Santiago Bernabéu.</p>
+    <button onclick="comprobar('p4', true, false)">Verdadero</button>
+    <button onclick="comprobar('p4', false, false)">Falso</button>
+
+    <p id="p5">5. Lamine Yamal nació en 2007.</p>
+    <button onclick="comprobar('p5', true, true)">Verdadero</button>
+    <button onclick="comprobar('p5', false, true)">Falso</button>
+
+    <p id="p6">6. Los colores del Barça son el azul y el blanco.</p>
+    <button onclick="comprobar('p6', true, false)">Verdadero</button>
+    <button onclick="comprobar('p6', false, false)">Falso</button>
+
+    <p id="p7">7. El Barça ganó La Liga en la temporada 2024-25.</p>
+    <button onclick="comprobar('p7', true, true)">Verdadero</button>
+    <button onclick="comprobar('p7', false, true)">Falso</button>
+
+    <script>
+        function comprobar(id, respuestaUsuario, respuestaCorrecta) {
+            var frase = document.getElementById(id);
+            if (respuestaUsuario == respuestaCorrecta) {
+                frase.style.color = "green";
+            } else {
+                frase.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>

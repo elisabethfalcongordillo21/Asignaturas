@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de img</title>
+</head>
+<body>
+    <h1>Cambio de imágenes </h1>
+    <img  id="Raphinha" onclick="cambiaImg()" src="imgEj2/raphinha1.jpg" alt="Foto Raphinha" width="400" height="450">
+    <p>Haz click sobre Raphinha para cambiar su foto.</p>
+
+    <script>
+        var imagenes = ["imgEj2/raphinha1.jpg", "imgEj2/raphinha2.jpg", "imgEj2/raphinha3.jpg", "imgEj2/raphinha4.jpg"];
+        var posicion = 0;
+
+         function cambiaImg() {
+            var image = document.getElementById("Raphinha");
+            posicion = posicion + 1;
+            if (posicion == imagenes.length) {
+                posicion = 0;
+            }
+            image.src = imagenes[posicion];
+        }
+
+    </script>
+
+</body>
+</html>
